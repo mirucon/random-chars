@@ -1,6 +1,6 @@
 # random-chars
 
-Generate random Japanese hiragana/katakana characters.
+Generate random Japanese hiragana/katakana characters. The characters generated will be copied to your clipboard if you're using macOS.'
 
 ## Install
 

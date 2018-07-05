@@ -42,13 +42,11 @@ const generateChar = (num, kind) => {
 
 program
   .version('1.0.0')
-  .command('random-chars <num>')
-  .option('-k, --kind <kind>', 'Kind of characters')
-  .action((num, cmd) => {
-    console.log(num)
-    console.log(!!num)
+  .arguments('[num]')
+  .option('-k, --kind [kind]', 'Kind of characters')
+  .action((num, options) => {
     const number = num ? num : 16
-    const kind = cmd.kind ? cmd.kind : 'both'
+    const kind = options.kind ? options.kind : 'both'
     generateChar(number, kind)
   })
 
