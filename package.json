@@ -1,0 +1,22 @@
+{
+  "name": "random-chars",
+  "version": "1.0.0",
+  "description": "Generate random hiragana/katakana letters",
+  "main": "app.js",
+  "repository": "https://github.com/mirucon/random-chars/",
+  "author": "Toshihiro Kanai <i@miruc.co>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "prettier --write *.js"
+  },
+  "dependencies": {
+    "commander": "^2.16.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.13.7"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  }
+}
