@@ -42,6 +42,7 @@ const generateChar = (num, kind) => {
 
 program
   .version('1.0.0')
+  .command('random-chars')
   .option('-n, --num <num>', 'Number of characters')
   .option('-k, --kind <kind>', 'Kind of characters')
   .action((dir, cmd) => {
