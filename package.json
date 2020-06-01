@@ -11,7 +11,7 @@
     "test": "prettier --list-different *.js"
   },
   "dependencies": {
-    "commander": "2.16.0"
+    "commander": "2.20.3"
   },
   "devDependencies": {
     "prettier": "1.13.7"
