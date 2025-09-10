@@ -1,16 +1,11 @@
 {
-  "extends": [
-    "config:base",
-    "group:allNonMajor"
-  ],
+  "extends": ["config:recommended", "group:allNonMajor"],
   "packageRules": [
     {
-      "updateTypes": ["minor", "patch"],
+      "matchUpdateTypes": ["minor", "patch"],
       "automerge": true
     }
   ],
   "timezone": "Asia/Tokyo",
-  "schedule": [
-    "before 7am on Saturday"
-  ]
+  "schedule": ["before 7am on Saturday"]
 }
