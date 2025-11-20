@@ -11,16 +11,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
       - name: Install dependencies
-        run: yarn install
+        run: pnpm install
       - name: Run Prettier
-        run: yarn run lint
+        run: pnpm run lint
 
   test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
       - name: Install dependencies
-        run: yarn install
+        run: pnpm install
       - name: Run tests
-        run: yarn test
+        run: pnpm test
