@@ -14,6 +14,6 @@ $ npm i -g https://github.com/mirucon/random-chars.git
 $ random-chars <num>
 ```
 
-### options 
+### options
 
-* `kind <kind>` - Kind of characters, `hiragana`, `katakata`, or `both`.
+- `kind <kind>` - Kind of characters, `hiragana`, `katakata`, or `both`.
