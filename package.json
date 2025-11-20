@@ -13,7 +13,7 @@
     "test:watch": "vitest --watch"
   },
   "dependencies": {
-    "clipboardy": "^4.0.0",
+    "clipboardy": "^5.0.0",
     "commander": "^14.0.0"
   },
   "devDependencies": {
