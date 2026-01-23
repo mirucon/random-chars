@@ -13,12 +13,11 @@
     "test:watch": "vitest --watch"
   },
   "dependencies": {
-    "clipboardy": "^5.0.1",
-    "commander": "^14.0.2"
+    "clipboardy": "^5.0.2"
   },
   "devDependencies": {
-    "prettier": "3.6.2",
-    "vitest": "^4.0.11"
+    "prettier": "^3.8.1",
+    "vitest": "^4.0.18"
   },
   "engines": {
     "node": ">=20"
