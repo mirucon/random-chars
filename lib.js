@@ -1,22 +1,21 @@
+import { randomInt } from 'node:crypto'
+
 export const generateChar = (num, kind) => {
   const hiragana =
     'ぁあぃいぅうぇえぉおかがきぎくぐけげこごさざしじすずせぜそぞただちぢっつづてでとどなにぬねのはばぱひびぴふぶぷへべぺほぼぽまみむめもゃやゅゆょよらりるれろわ'
   const katakana =
     'ァアィイゥウェエォオカガキギクグケゲコゴサザシジスズセゼソゾタダチヂッツヅテデトドナニヌネノハバパヒビピフブプヘベペホボポマミムメモャヤュユョヨラリルレロワ'
 
-  let character
+  let characters
   if (kind === 'hiragana' || kind === 'h') {
-    character = hiragana
+    characters = hiragana
   } else if (kind === 'katakana' || kind === 'k') {
-    character = katakana
+    characters = katakana
   } else {
-    character = hiragana + katakana
+    characters = hiragana + katakana
   }
 
-  let chars = ''
-  for (let i = 0; i < num; i++) {
-    const rand = Math.floor(Math.random() * character.length)
-    chars += character[rand]
-  }
-  return chars
+  return Array.from({ length: num }, () =>
+    characters.charAt(randomInt(0, characters.length)),
+  ).join('')
 }
